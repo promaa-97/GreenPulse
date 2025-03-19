@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | GreenPulse</title>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.jpg">
+    <link rel="stylesheet" href="css/feedback.css">
+    
+</head>
+<body style="margin: 0%; background-color: #EAF3D8; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <!--Navigation bar-->
+    <div class="nav-bar">
+        <div class="nav-bar-inner">
+            <a href="home.html">
+                <div id="logo">
+                    <div>
+                        <img id="logo-img" src="images/fav-icon.jpg" alt="logo" width="70">
+                    </div>
+                    <div>
+                        <h1 id="logo-name">GreenPulse</h1>
+                    </div>
+                </div>
+            </a>
+            <div class="nav-menu">
+                <!--Change active-page ID for relevent page to see  when activated on navigation bar-->
+                <div><a class="menu-list" href="home.html">Home</a></div>
+                <div><a class="menu-list" href="volunteer.html ">Volunteer</a></div>
+                <div><a class="menu-list" href="team.html">Team</a></div>
+                <div><a class="menu-list" href="sitemap.html">Site Map</a></div>
+                <div><a class="menu-list" href="table.html">Table</a></div>
+                <div id="active-page"><a class="menu-list" href="feedback.html">Feedback</a></div>
+            </div>
+            <div class="prof-pic">
+                <a href="profile.html"><img id="prof-pic" style="border-radius: 50%;" src="images/profile_img.png" alt="profile_image" width="70"></a>
+            </div>       
+        </div>
+    </div>
+    
+   
+
+    <!-- Feedback Form Container -->
+    
+        <div class="background">
+
+             <!-- Video Background -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="images/forestbackground.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+            
+        <!-- Feedback Form -->
+            <form id="feedbackForm">
+                
+                <!-- Personal Details Section -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="visitorName">Visitor Name: <br><span class="description">Please provide your full name to help us personalize your feedback and keep you updated about our forest conservation efforts.</span></label>
+                    <input type="text" id="visitorName" name="visitorName" required maxlength="50" title="Please enter your full name.">
+                    
+                    <label for="contactEmail">Contact Email:</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required title="Please enter a valid email address.">
+                    
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required title="Please enter a valid phone number.">
+                    
+                    <label for="homeAddress">Home Address:</label>
+                    <textarea id="homeAddress" name="homeAddress" rows="4" maxlength="200"></textarea>
+                </fieldset>
+                
+                <!-- Feedback Details Section -->
+                <fieldset>
+                    <legend>Feedback Details</legend>
+                    <label for="yourFeedback">Your Feedback:</label>
+                    <textarea id="yourFeedback" name="yourFeedback" rows="4" maxlength="500" required></textarea>
+                    <div id="charCount">500 characters remaining</div>
+                    
+                    <!-- Green Pulse Usefulness Dropdown -->
+                    <label for="popupList">How useful did you find the Green Pulse?</label>
+                    <select id="popupList" name="popupList">
+                        <option value="choose">Choose from the following</option>
+                        <option value="veryUseful">Very useful</option>
+                        <option value="quiteUseful">Quite useful</option>
+                        <option value="notUseful">Not useful</option>
+                    </select>
+
+                    <!-- Activities Usefulness Multi-select -->
+                    <label for="scrollingList">How useful were the activities provided?</label>
+                    <select id="scrollingList" name="scrollingList" multiple>
+                        <option value="forestPreservation">Forest Preservation</option>
+                        <option value="wildlifeProtection">Wildlife Protection</option>
+                        <option value="ecoTourism">Eco-Tourism Experiences</option>
+                        <option value="conservationProjects">Conservation Projects</option>
+                        <option value="communityInvolvement">Community Involvement</option>
+                    </select>
+                    
+                    <!-- Additional Topics Data List -->
+                    <label for="datalist">How useful were the additional topics?</label>
+                    <input list="topics" id="datalist" name="datalist">
+                    <datalist id="topics">
+                        <option value="Conservation Policy">
+                        <option value="Wildlife Protection">
+                        <option value="Tree Planting">
+                        <option value="Volunteer Programs">
+                    </datalist>
+                    
+                    <label for="checkbox">How useful did you find the information provided?</label>
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="newsUpdates"> News Updates
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="volunteerOpportunities"> Volunteer Opportunities
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="donationInfo"> Donation Information<br><br>
+                    
+                    <label for="radio">How useful was your experience overall?</label>
+                    <input type="radio" id="radio1" name="radio" value="satisfied"> Satisfied
+                    <input type="radio" id="radio2" name="radio" value="unsatisfied"> Unsatisfied<br><br>
+                    
+                    <!-- Visit Date Picker -->
+                    <label for="date">Visit Date:</label>
+                    <input type="date" id="date" name="date">
+                    
+                    <label for="datetime">Schedule Future Feedback Submission:</label>
+                    <input type="datetime-local" id="datetime" name="datetime">
+                    
+                    <label for="file">Upload Attachment (optional):</label>
+                    <input type="file" id="file" name="file">
+                    
+                    <!-- Overall Rating Emoji Section -->
+                    <label for="rating">Overall Rating:</label>
+                    <div id="rating">
+                        <span>&#x1F60A;</span>
+                        <span>&#x1F600;</span>
+                        <span>&#x1F610;"></span>
+                        <span>&#x1F641;"></span>
+                        <span>&#x1F620;"></span>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+   
+    
+    <!--Footer Menu-->
+    <footer>
+        <div class="footer">
+            <div class="footer-inner">
+                <a href="home.html">
+                    <div class="footer-logo">
+                        <img id="footer-img" src="images/fav-icon.jpg" alt="logo" width="100">
+                        <div id="logo-name-footer" style="display: flex;">
+                            <h1>GreenPulse</h1>
+                        </div>
+                    </div>
+                </a>
+                <div class="footer-std">
+                    <h2 class="footer-name">Website Links</h2>
+                    <a class="footer-links" href="home.html ">Home</a><br>
+                    <a class="footer-links" href="volunteer.html">Volunteer</a><br>
+                    <a class="footer-links" href="team.html">Team</a><br>
+                    <a class="footer-links" href="sitemap.html">Site Map</a><br>
+                    <a class="footer-links" href="table.html">Table</a><br>
+                    <a class="footer-links" href="feedback.html">Feedback</a><br>
+                    <a class="footer-links" href="profile.html">Profile</a>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Useful Links</h2>
+                    <a class="footer-links" href="https://www.globalgoals.org/terms-conditions/" target="_blank">Conditions</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/privacy-policy/" target="_blank">Privacy Policy</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/cookies/" target="_blank">Cookies</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/anti-corruption/" target="_blank">Anti Corruption</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/asset-licence/" target="_blank">Asset License</a><br><br><br>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Content</h2>
+                    <a class="footer-links" href="content_ST1.html">Sustainable Agriculture</a><br>
+                    <a class="footer-links" href="content_ST2.html">Low Carbon Emmission</a><br>
+                    <a class="footer-links" href="content_ST3.html">Biodiversity Protection</a><br>
+                    <a class="footer-links" href="content_ST4.html">Eco Tourism</a><br><br><br><br>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Editor Pages</h2>
+                    <a class="footer-links" href="pageEditor_ST1.html">Student 1</a><br>
+                    <a class="footer-links" href="pageEditor_ST2.html">Student 2</a><br>
+                    <a class="footer-links" href="pageEditor_ST3.html">Student 3</a><br>
+                    <a class="footer-links" href="pageEditor_ST4.html">Student 4</a><br><br><br><br>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Validation Pages</h2>
+                    <a class="footer-links" href="validation_ST1.html">Student 1</a><br>
+                    <a class="footer-links" href="validation_ST2.html">Student 2</a><br>
+                    <a class="footer-links" href="validation_ST3.html">Student 3</a><br>
+                    <a class="footer-links" href="validation_ST4.html">Student 4</a><br><br><br><br>
+                </div>
+            </div>  
+        </div>
+        <div class="footer-2">
+            <div class="copyright">
+              <div class="copy-cont">
+                <p>&copy; Copyright <b>United Nations</b>. All rights Reserved.<br>
+                <b>Designed By Group 2 Subgroup 3</b></p>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

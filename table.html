@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table | GreenPulse</title>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.jpg">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body style="margin: 0%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+    <!--Navigation bar-->
+    <div class="nav-bar">
+        <div class="nav-bar-inner">
+            <a href="home.html">
+                <div id="logo">
+                    <div>
+                        <img id="logo-img" src="images/fav-icon.jpg" alt="logo" width="70">
+                    </div>
+                    <div>
+                        <h1 id="logo-name">GreenPulse</h1>
+                    </div>
+                </div>
+            </a>
+            <div class="nav-menu">
+                <!--Change active-page ID for relevent page to see  when activated on navigation bar-->
+                <div><a class="menu-list" href="home.html">Home</a></div>
+                <div><a class="menu-list" href="volunteer.html ">Volunteer</a></div>
+                <div><a class="menu-list" href="team.html">Team</a></div>
+                <div><a class="menu-list" href="sitemap.html">Site Map</a></div>
+                <div id="active-page"><a class="menu-list" href="table.html">Table</a></div>
+                <div><a class="menu-list" href="feedback.html">Feedback</a></div>
+            </div>
+            <div class="prof-pic">
+                <a href="profile.html"><img id="prof-pic" style="border-radius: 50%;" src="images/profile_img.png" alt="profile_image" width="70"></a>
+            </div>       
+        </div>
+    </div>
+    
+	<!--background video-->
+	<video autoplay muted loop id="bgVideo">
+        <source src="images/forest_video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+	<!--Content here-->
+    <div class="container">
+        <ul id="top-menu">
+            <li><a id="to-home" href="home.html">Home</a></li>
+            <li>&ensp;&ensp;>&ensp;&ensp;Table</li>
+        </ul>
+		
+        <div class="row">
+			<!-- main heading and description -->
+            <div class="column">
+                <div class="card" style="border: none;">
+                    <h1 id="main-title">Protecting Life on Land: Forest & Wildlife Conservation Efforts</h1>
+                    <h2 id="sub-title">Description</h2>
+                    <p id="para">This interactive table highlights global conservation initiatives focused on forests, wildlife, and 
+                        sustainable land management. It showcases key projects, goals, and impacts, 
+                        reinforcing the importance of protecting ecosystems.</p>
+					<!-- table section -->
+                    <table>
+                        <tr id="titles">
+                            <th rowspan="2"  style="background-color: white;"><img class="col-1-icons" src="images/fav-icon.jpg" alt="logo" width="100"></th>
+                            <th>
+                                <div class="tooltip">
+                                    <img src="images/icons8-earth-48.png" alt="earth-icon" width="30"><br>Initiative / Region
+                                    <span class="tooltiptext">The name of the conservation project and the region where it is being implemented</span> <!--  hidden Span for tooltip -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="tooltip">
+                                    <img src="images/icons8-target-30.png" alt="target-icon"><br>Conversation Goal
+                                    <span class="tooltiptext">The main objective of the initiative, such as afforestation, wildlife protection, or sustainable land use</span> <!--  hidden Span for tooltip -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="tooltip">
+                                    <img src="images/icons8-achievement-48.png" alt="medle-icon" width="30"><br>Impact & Achievement
+                                    <span class="tooltiptext">Key measurable outcomes of the project, such as the number of trees planted or species protected</span> <!--  hidden Span for tooltip -->
+                                </div>
+                            </th>
+                            <th>
+                                <div class="tooltip">
+                                    <img src="images/icons8-link-48.png" alt="link-icon" width="30"><br>More Info
+                                    <span class="tooltiptext">Click to learn more about this initiative on its official website or trusted sources</span> <!--  hidden Span for tooltip -->
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="section-headings" colspan="4"><b>Forest Conversation Projects</b></td>
+                        </tr>
+                        <tr class="row-odd">
+                            <th rowspan="4" class="icon-col"><img class="col-1-icons" src="images/forest.png" alt="wildlife-icon"></th>
+                            <th><b>Amazon protection Plan (South America)</b></th>
+                            <td>Prevent deforestation & illegal logging</td>
+                            <td><img src="images/icons8-plant-48.png" alt="tree-icon" width="25">&nbsp;Reduced deforestation by 30%</td>
+                            <td><a class="links" href="https://www.amazonconservation.org/" target="_blank">Amazon Conservation</a></td>
+                        </tr>
+                        <tr class="row-even">
+                            <th><b>The Great Green Wall (Africa)</b></th>
+                            <td>Restore land & combat desertification</td>
+                            <td><img src="images/icons8-branch-32.png" alt="branch-icon" width="25">&nbsp;8M hectares restored</td>
+                            <td><a class="links" href="https://www.greatgreenwall.org/" target="_blank">Great Green Wall Initiative</a></td>
+                        </tr>
+                        <tr class="row-odd">
+                            <th><b>Billion Tree Tsunami (Pakistan)</b></th>
+                            <td>Large-scale afforestation for carbon absorption</td>
+                            <td><img src="images/icons8-leaves-100.png" alt="leaves-icon" width="25">&nbsp;1B+ trees planted</td>
+                            <td><a class="links" href="https://www.worldbank.org/ext/en/home" target="_blank">Pakistan's Billion Tree Tsunami</a></td>
+                        </tr>
+                        <tr class="row-even">
+                            <th><b>Mangrove Restoration (Indonesia)</b></th>
+                            <td>Restore coastal mangroves & enhance biodiversity</td>
+                            <td><img src="images/icons8-island-48.png" alt="island-icon" width="25">&nbsp;50,000 hectares restored</td>
+                            <td><a class="links" href="https://mangroveactionproject.org/" target="_blank">Mangrove Action Project</a></td>
+                        </tr>
+                        <tr>
+                            <th class="icon-col" rowspan="4"><img class="col-1-icons" src="images/wildlife_icon.png" alt="wildlife-icon"></th>
+                            <td class="section-headings" colspan="4"><b>Wildlife Conservation Efforts</b></td>
+                        </tr>
+                        <tr class="row-odd">
+                            <th><b>Wildlife Corridors (India)</b></th>
+                            <td>Ensure safe migration routes for endangered species</td>
+                            <td><img src="images/icons8-tiger-48.png" alt="tiger-icon" width="25">&nbsp;Increased tiger population by 20%</td>
+                            <td><a class="links" href="https://www.wti.org.in/" target="_blank">Wildlife Trust of India</a></td>
+                        </tr>
+                        <tr class="row-even">
+                            <th><b>Rewilding Europe Initiative</b></th>
+                            <td>Restore native forests & reintroduce species</td>
+                            <td><img src="images/icons8-tree-48.png" alt="tree-icon" width="25">&nbsp;10+ species reintroduced</td>
+                            <td><a class="links" href="https://rewildingeurope.com/" target="_blank">Rewilding Europe</a></td>
+                        </tr>
+                        <tr class="row-odd">
+                            <th><b>Community-Led Conservation (Nepal)</b></th>
+                            <td>Engage locals in protecting wildlife & forests</td>
+                            <td><img src="images/icons8-owl-94.png" alt="bird-icon" width="25">&nbsp;500+ bird species protected</td>
+                            <td><a class="links" href="https://www.himalayan-foundation.org/" target="_blank">Himalayan Conservation</a></td>
+                        </tr>
+                        <tr>
+                            <th class="icon-col" rowspan="3"><img class="col-1-icons" src="images/sustainable_icon.png" alt="wildlife-icon"></th>
+                            <td class="section-headings" colspan="4"><b>Sustainable Land Management</b></td>
+                        </tr>
+                        <tr class="row-odd">
+                            <th><b>EcoVillage Project</b></th>
+                            <td>Promote sustainable community forests</td>
+                            <td><img src="images/icons8-earth-48.png" alt="earth-icon" width="25">&nbsp;50+ eco-villages established</td>
+                            <td><a class="links" href="https://ecovillage.org/" target="_blank">Global Ecovillage Network</a></td>
+                        </tr>
+                        <tr class="row-even">
+                            <th><b>Solar-Powered Reforestation (Kenya)</b></th>
+                            <td>Use renewable energy for afforestation</td>
+                            <td><img src="images/icons8-planting-48.png" alt="planting-icon" width="25">&nbsp;5M+ trees planted</td>
+                            <td><a class="links" href="https://trees.org/" target="_blank">Trees for the Future</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+		<!-- back to top button -->
+        <div class="row">
+            <div class="column">
+                <a id="back-to-top" href="#top-menu">Back to Top</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer Menu-->
+    <footer>
+        <div class="footer">
+            <div class="footer-inner">
+                <a href="home.html">
+                    <div class="footer-logo">
+                        <img id="footer-img" src="images/fav-icon.jpg" alt="logo" width="100">
+                        <div id="logo-name-footer" style="display: flex;">
+                            <h1>GreenPulse</h1>
+                        </div>
+                    </div>
+                </a>
+                <div class="footer-std">
+                    <h2 class="footer-name">Website Links</h2>
+                    <a class="footer-links" href="home.html ">Home</a><br>
+                    <a class="footer-links" href="volunteer.html">Volunteer</a><br>
+                    <a class="footer-links" href="team.html">Team</a><br>
+                    <a class="footer-links" href="sitemap.html">Site Map</a><br>
+                    <a class="footer-links" href="table.html">Table</a><br>
+                    <a class="footer-links" href="feedback.html">Feedback</a><br>
+                    <a class="footer-links" href="profile.html">Profile</a>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Useful Links</h2>
+                    <a class="footer-links" href="https://www.globalgoals.org/terms-conditions/" target="_blank">Conditions</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/privacy-policy/" target="_blank">Privacy Policy</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/cookies/" target="_blank">Cookies</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/anti-corruption/" target="_blank">Anti Corruption</a><br>
+                    <a class="footer-links" href="https://www.globalgoals.org/asset-licence/" target="_blank">Asset License</a><br><br><br>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Content</h2>
+                    <a class="footer-links" href="content_ST1.html">Sustainable Agriculture</a><br>
+                    <a class="footer-links" href="content_ST2.html">Low Carbon Emmission</a><br>
+                    <a class="footer-links" href="content_ST3.html">Biodiversity Protection</a><br>
+                    <a class="footer-links" href="content_ST4.html">Eco Tourism</a><br><br><br><br>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Editor Pages</h2>
+                    <a class="footer-links" href="pageEditor_ST1.html">Student 1</a><br>
+                    <a class="footer-links" href="pageEditor_ST2.html">Student 2</a><br>
+                    <a class="footer-links" href="pageEditor_ST3.html">Student 3</a><br>
+                    <a class="footer-links" href="pageEditor_ST4.html">Student 4</a><br><br><br><br>
+                </div>
+                <div class="footer-std">
+                    <h2 class="footer-name">Validation Pages</h2>
+                    <a class="footer-links" href="validation_ST1.html">Student 1</a><br>
+                    <a class="footer-links" href="validation_ST2.html">Student 2</a><br>
+                    <a class="footer-links" href="validation_ST3.html">Student 3</a><br>
+                    <a class="footer-links" href="validation_ST4.html">Student 4</a><br><br><br><br>
+                </div>
+            </div>  
+        </div>
+        <div class="footer-2">
+            <div class="copyright">
+              <div class="copy-cont">
+                <p>&copy; Copyright <b>United Nations</b>. All rights Reserved.<br>
+                <b>Designed By Group 2 Subgroup 3</b></p>
+              </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
